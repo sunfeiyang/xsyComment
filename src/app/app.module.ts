@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import {ReactiveFormsModule} from '@angular/forms';
+import { MenuComponent } from './menu/menu.component';
 
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarouselComponent
+    CarouselComponent,
+    MenuComponent
   ],
   imports: [
     ReactiveFormsModule,
