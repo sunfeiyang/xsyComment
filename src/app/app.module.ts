@@ -11,6 +11,7 @@ import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import {ReactiveFormsModule} from '@angular/forms';
 import { MenuComponent } from './menu/menu.component';
+import { UpfileComponent } from './upfile/upfile.component';
 
 registerLocaleData(zh);
 
@@ -18,7 +19,8 @@ registerLocaleData(zh);
   declarations: [
     AppComponent,
     CarouselComponent,
-    MenuComponent
+    MenuComponent,
+    UpfileComponent
   ],
   imports: [
     ReactiveFormsModule,

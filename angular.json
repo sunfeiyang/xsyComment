@@ -63,7 +63,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "xsyComment:build"
+            "browserTarget": "xsyComment:build",
+            "proxyConfig": "proxy.conf.json"
           },
           "configurations": {
             "production": {
