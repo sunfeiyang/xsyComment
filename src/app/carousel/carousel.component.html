@@ -8,7 +8,7 @@
   <nz-form-item>
     <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>image</nz-form-label>
     <nz-form-control [nzSm]="14" [nzXs]="24">
-      <input nz-input [hidden]="true" id="image" >
+      <input nz-input [hidden]="true" id="image">
       <!-- 上传文件 -->
       <app-upfile></app-upfile>
     </nz-form-control>
@@ -17,19 +17,24 @@
     <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="nickname" nzRequired>
           <span>
             Nickname
-            <i nz-icon nz-tooltip nzTitle="What do you want other to call you" type="question-circle" theme="outline"></i>
+            <i nz-icon nz-tooltip nzTitle="What do you want other to call you" type="question-circle"
+               theme="outline"></i>
           </span>
     </nz-form-label>
     <nz-form-control [nzSm]="14" [nzXs]="24">
       <input nz-input id="nickname" formControlName="nickname">
-      <nz-form-explain *ngIf="validateForm.get('nickname').dirty && validateForm.get('nickname').errors">Please input your nickname!</nz-form-explain>
+      <nz-form-explain *ngIf="validateForm.get('nickname').dirty && validateForm.get('nickname').errors">Please input
+        your nickname!
+      </nz-form-explain>
     </nz-form-control>
   </nz-form-item>
   <nz-form-item>
     <nz-form-label [nzSm]="6" [nzXs]="24" nzFor="website" nzRequired>Website</nz-form-label>
     <nz-form-control [nzSm]="14" [nzXs]="24">
       <input nz-input id="website" formControlName="website" placeholder="website">
-      <nz-form-explain *ngIf="validateForm.get('website').dirty && validateForm.get('website').errors">Please input website!</nz-form-explain>
+      <nz-form-explain *ngIf="validateForm.get('website').dirty && validateForm.get('website').errors">Please input
+        website!
+      </nz-form-explain>
     </nz-form-control>
   </nz-form-item>
 
